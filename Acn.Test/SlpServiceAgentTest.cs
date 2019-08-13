@@ -24,8 +24,7 @@
 #endregion
 
 using Acn.Slp;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+using NUnit.Framework;
 using Acn.Slp.Packets;
 
 namespace Acn.Test
@@ -36,7 +35,7 @@ namespace Acn.Test
     ///This is a test class for SlpServiceAgentTest and is intended
     ///to contain all SlpServiceAgentTest Unit Tests
     ///</summary>
-    [TestClass()]
+    [TestFixture]
     public class SlpServiceAgentTest
     {
 
@@ -93,26 +92,25 @@ namespace Acn.Test
         /// <summary>
         ///A test for CheckUrlMatch
         ///</summary>
-        [TestMethod()]
-        [DeploymentItem("Acn.dll")]
+        [Test, Category("Unit")]
         public void CheckUrlMatchTest()
         {
-            Assert.IsFalse(SlpServiceAgent_Accessor.CheckUrlMatch("", "", "", ""));
-            Assert.IsTrue(SlpServiceAgent_Accessor.CheckUrlMatch("service:printer:lpr://igore.wco.ftp.com:515/draft", "printer", "lpr", "igore.wco.ftp.com:515/draft"));
-            Assert.IsFalse(SlpServiceAgent_Accessor.CheckUrlMatch("service:printer:lpr://igore.wco.ftp.com:515/draft", "printer", "lpr", "10.0.0.1:515/draft"));
-            Assert.IsFalse(SlpServiceAgent_Accessor.CheckUrlMatch("service:printer:lpr://igore.wco.ftp.com:515/draft", "e133.esta", "lpr", "igore.wco.ftp.com:515/draft"));
-            Assert.IsTrue(SlpServiceAgent_Accessor.CheckUrlMatch("service:e133.esta", "e133.esta", string.Empty, "2.4.9.8:5568/0xaabb11223344"));
-            Assert.IsTrue(SlpServiceAgent_Accessor.CheckUrlMatch("service:e133.esta://2.4.9.8:5568/0xaabb11223344", "e133.esta", string.Empty, "2.4.9.8:5568/0xaabb11223344"));
-            Assert.IsFalse(SlpServiceAgent_Accessor.CheckUrlMatch("service:e133.esta://2.7.9.8:5568/0xaabb11223344", "e133.esta", string.Empty, "2.4.9.8:5568/0xaabb11223344"));
-            Assert.IsTrue(SlpServiceAgent_Accessor.CheckUrlMatch("nfs://max.net/znoo", "filestore", "nfs", "max.net/znoo"));
-            Assert.IsFalse(SlpServiceAgent_Accessor.CheckUrlMatch("nfs://max.org/znoo", "filestore", "nfs", "max.net/znoo"));
+            Assert.IsFalse(SlpServiceAgent.CheckUrlMatch("", "", "", ""));
+            Assert.IsTrue(SlpServiceAgent.CheckUrlMatch("service:printer:lpr://igore.wco.ftp.com:515/draft", "printer", "lpr", "igore.wco.ftp.com:515/draft"));
+            Assert.IsFalse(SlpServiceAgent.CheckUrlMatch("service:printer:lpr://igore.wco.ftp.com:515/draft", "printer", "lpr", "10.0.0.1:515/draft"));
+            Assert.IsFalse(SlpServiceAgent.CheckUrlMatch("service:printer:lpr://igore.wco.ftp.com:515/draft", "e133.esta", "lpr", "igore.wco.ftp.com:515/draft"));
+            Assert.IsTrue(SlpServiceAgent.CheckUrlMatch("service:e133.esta", "e133.esta", string.Empty, "2.4.9.8:5568/0xaabb11223344"));
+            Assert.IsTrue(SlpServiceAgent.CheckUrlMatch("service:e133.esta://2.4.9.8:5568/0xaabb11223344", "e133.esta", string.Empty, "2.4.9.8:5568/0xaabb11223344"));
+            Assert.IsFalse(SlpServiceAgent.CheckUrlMatch("service:e133.esta://2.7.9.8:5568/0xaabb11223344", "e133.esta", string.Empty, "2.4.9.8:5568/0xaabb11223344"));
+            Assert.IsTrue(SlpServiceAgent.CheckUrlMatch("nfs://max.net/znoo", "filestore", "nfs", "max.net/znoo"));
+            Assert.IsFalse(SlpServiceAgent.CheckUrlMatch("nfs://max.org/znoo", "filestore", "nfs", "max.net/znoo"));
     
         }
 
         /// <summary>
         ///A test for ServiceUrl
         ///</summary>
-        [TestMethod()]
+        [Test, Category("Unit")]
         public void ServiceUrlTest()
         {
             SlpServiceAgent target = new SlpServiceAgent(); 
@@ -121,17 +119,17 @@ namespace Acn.Test
             target.ServiceUrl = expected;
             actual = target.ServiceUrl;
             Assert.AreEqual(expected, actual, "Full service url did not match when parsed and output");
-            Assert.AreEqual<string>("service:printer:lpr", target.ServiceType, "Full service type did not match");
-            Assert.AreEqual<string>("printer", target.ServiceAbstractType, "Abstract service type did not match");
-            Assert.AreEqual<string>("lpr", target.ServiceConcreteType, "Concrete service type did not match");
-            Assert.AreEqual<string>("igore.wco.ftp.com:515/draft", target.ServiceAddress, "Address service type did not match");
+            Assert.AreEqual("service:printer:lpr", target.ServiceType, "Full service type did not match");
+            Assert.AreEqual("printer", target.ServiceAbstractType, "Abstract service type did not match");
+            Assert.AreEqual("lpr", target.ServiceConcreteType, "Concrete service type did not match");
+            Assert.AreEqual("igore.wco.ftp.com:515/draft", target.ServiceAddress, "Address service type did not match");
         }
 
         /// <summary>
         /// Test for ServiceUrl
         ///   This tests that acn urls parse (no concrete type)
         /// </summary>
-        [TestMethod()]
+        [Test, Category("Unit")]
         public void ServiceUrlTest_AcnUrls()
         {
             SlpServiceAgent target = new SlpServiceAgent();
@@ -140,17 +138,17 @@ namespace Acn.Test
             target.ServiceUrl = expected;
             actual = target.ServiceUrl;
             Assert.AreEqual(expected, actual, "Full service url did not match when parsed and output");
-            Assert.AreEqual<string>("service:e133.esta", target.ServiceType, "Full service type did not match");
-            Assert.AreEqual<string>("e133.esta", target.ServiceAbstractType, "Abstract service type did not match");
-            Assert.AreEqual<string>(string.Empty, target.ServiceConcreteType, "Concrete service type did not match");
-            Assert.AreEqual<string>("2.4.3.127/0xaabb11223344", target.ServiceAddress, "Address service type did not match");
+            Assert.AreEqual("service:e133.esta", target.ServiceType, "Full service type did not match");
+            Assert.AreEqual("e133.esta", target.ServiceAbstractType, "Abstract service type did not match");
+            Assert.AreEqual(string.Empty, target.ServiceConcreteType, "Concrete service type did not match");
+            Assert.AreEqual("2.4.3.127/0xaabb11223344", target.ServiceAddress, "Address service type did not match");
         }
 
         /// <summary>
         /// Test for ServiceUrl
         ///   This tests that concrete only Urls parse
         /// </summary>
-        [TestMethod()]
+        [Test, Category("Unit")]
         public void ServiceUrlTest_Concrete()
         {
             SlpServiceAgent target = new SlpServiceAgent();
@@ -159,21 +157,20 @@ namespace Acn.Test
             target.ServiceUrl = expected;
             actual = target.ServiceUrl;
             Assert.AreEqual("service:http://www.ietf.org:80/rfc", actual, "Full service url did not match when parsed and output");
-            Assert.AreEqual<string>("service:http", target.ServiceType, "Full service type did not match");
-            Assert.AreEqual<string>(string.Empty, target.ServiceAbstractType, "Abstract service type did not match");
-            Assert.AreEqual<string>("http", target.ServiceConcreteType, "Concrete service type did not match");
-            Assert.AreEqual<string>("www.ietf.org:80/rfc", target.ServiceAddress, "Address service type did not match");
+            Assert.AreEqual("service:http", target.ServiceType, "Full service type did not match");
+            Assert.AreEqual(string.Empty, target.ServiceAbstractType, "Abstract service type did not match");
+            Assert.AreEqual("http", target.ServiceConcreteType, "Concrete service type did not match");
+            Assert.AreEqual("www.ietf.org:80/rfc", target.ServiceAddress, "Address service type did not match");
 
         }
 
         /// <summary>
         ///A test for IsReplyRequired
         ///</summary>
-        [TestMethod()]
-        [DeploymentItem("Acn.dll")]
+        [Test, Category("Unit")]
         public void IsReplyRequiredTest()
         {
-            SlpServiceAgent_Accessor target = new SlpServiceAgent_Accessor() { ServiceUrl = "service:e133.esta://2.4.3.127/0xaabb11223344" };
+            SlpServiceAgent target = new SlpServiceAgent() { ServiceUrl = "service:e133.esta://2.4.3.127/0xaabb11223344" };
             ServiceRequestPacket request = new ServiceRequestPacket() { ServiceType = "service:e133.esta", ScopeList = target.Scope }; 
             Assert.IsTrue(target.IsReplyRequired(request));
             request.ServiceType = "service:directory-agent";

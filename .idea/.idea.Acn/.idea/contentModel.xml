@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="ACN" t="IncludeRecursive">
+        <e p="Acn.csproj" t="IncludeRecursive" />
+        <e p="AcnPacket.cs" t="Include" />
+        <e p="AcnPacketFactory.cs" t="Include" />
+        <e p="AcnPdu.cs" t="Include" />
+        <e p="AcnRootLayer.cs" t="Include" />
+        <e p="ArtNet" t="Include">
+          <e p="ArtNetOpCodes.cs" t="Include" />
+          <e p="IO" t="Include">
+            <e p="ArtNetBinaryReader.cs" t="Include" />
+            <e p="ArtNetBinaryWriter.cs" t="Include" />
+            <e p="ArtNetReceiveData.cs" t="Include" />
+          </e>
+          <e p="Packets" t="Include">
+            <e p="ArtNetDmxPacket.cs" t="Include" />
+            <e p="ArtNetPacket.cs" t="Include" />
+            <e p="ArtPollPacket.cs" t="Include" />
+            <e p="ArtPollReplyPacket.cs" t="Include" />
+            <e p="ArtRdmPacket.cs" t="Include" />
+            <e p="ArtRdmSubPacket.cs" t="Include" />
+            <e p="ArtTodControlPacket.cs" t="Include" />
+            <e p="ArtTodDataPacket.cs" t="Include" />
+            <e p="ArtTodRequestPacket.cs" t="Include" />
+          </e>
+          <e p="Sockets" t="Include">
+            <e p="ArtNetSocket.cs" t="Include" />
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CustomDictionary.xml" t="Include" />
+        <e p="Helpers" t="Include">
+          <e p="DmxStreamer.cs" t="Include" />
+          <e p="DmxUniverse.cs" t="Include" />
+          <e p="NetworkAdapterEnumerator.cs" t="Include" />
+          <e p="SlpDeviceEventArgs.cs" t="Include" />
+          <e p="SlpDeviceInformation.cs" t="Include" />
+          <e p="SlpDeviceManager.cs" t="Include" />
+        </e>
+        <e p="InvalidPacketException.cs" t="Include" />
+        <e p="IO" t="Include">
+          <e p="AcnBinaryReader.cs" t="Include" />
+          <e p="AcnBinaryWriter.cs" t="Include" />
+        </e>
+        <e p="IProtocolFilter.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Packets" t="Include">
+          <e p="Dmp" t="Include">
+            <e p="DmpGetProperty.cs" t="Include" />
+            <e p="DmpGetPropertyReply.cs" t="Include" />
+            <e p="DmpMessages.cs" t="Include" />
+            <e p="DmpSetProperty.cs" t="Include" />
+          </e>
+          <e p="RdmNet" t="Include">
+            <e p="RdmNetFramingPdu.cs" t="Include" />
+            <e p="RdmNetHeartbeat.cs" t="Include" />
+            <e p="RdmNetPacket.cs" t="Include" />
+            <e p="RdmNetPdu.cs" t="Include" />
+            <e p="RdmNetStatusPacket.cs" t="Include" />
+            <e p="RdmNetStatusPdu.cs" t="Include" />
+          </e>
+          <e p="sAcn" t="Include">
+            <e p="StreamingAcnDmxPacket.cs" t="Include" />
+            <e p="StreamingAcnDmxPdu.cs" t="Include" />
+            <e p="StreamingAcnFramingPdu.cs" t="Include" />
+            <e p="StreamingAcnPacket.cs" t="Include" />
+            <e p="StreamingAcnSynchronizationPacket.cs" t="Include" />
+          </e>
+          <e p="Sdt" t="Include">
+            <e p="Addresses" t="Include">
+              <e p="IPv4Address.cs" t="Include" />
+              <e p="IPv6Address.cs" t="Include" />
+              <e p="NullAddress.cs" t="Include" />
+              <e p="StdAddress.cs" t="Include" />
+            </e>
+            <e p="ChannelParameterBlock.cs" t="Include" />
+            <e p="ReasonCodes.cs" t="Include" />
+            <e p="StdAck.cs" t="Include" />
+            <e p="StdChannelParams.cs" t="Include" />
+            <e p="StdConnect.cs" t="Include" />
+            <e p="StdConnectAccept.cs" t="Include" />
+            <e p="StdConnectRefuse.cs" t="Include" />
+            <e p="StdDisconnect.cs" t="Include" />
+            <e p="StdDisconnecting.cs" t="Include" />
+            <e p="StdGetSessions.cs" t="Include" />
+            <e p="StdJoin.cs" t="Include" />
+            <e p="StdJoinAccept.cs" t="Include" />
+            <e p="StdJoinRefuse.cs" t="Include" />
+            <e p="StdLeave.cs" t="Include" />
+            <e p="StdLeaving.cs" t="Include" />
+            <e p="StdNak.cs" t="Include" />
+            <e p="StdReliableWrapper.cs" t="Include" />
+            <e p="StdSessions.cs" t="Include" />
+            <e p="StdUnreliableWrapper.cs" t="Include" />
+            <e p="StdVectors.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="ProtocolIds.cs" t="Include" />
+        <e p="Rdm" t="Include">
+          <e p="Broker" t="Include">
+            <e p="RdmDiscovery.cs" t="Include" />
+            <e p="RdmMessageAttribute.cs" t="Include" />
+            <e p="RdmMessageBroker.cs" t="Include" />
+            <e p="RdmPersonality.cs" t="Include" />
+            <e p="RdmSlot.cs" t="Include" />
+          </e>
+          <e p="DmxStartCodes.cs" t="Include" />
+          <e p="IO" t="Include">
+            <e p="RdmBinaryReader.cs" t="Include" />
+            <e p="RdmBinaryWriter.cs" t="Include" />
+          </e>
+          <e p="Packets" t="Include">
+            <e p="Configuration" t="Include">
+              <e p="LockPin.cs" t="Include" />
+              <e p="LockState.cs" t="Include" />
+              <e p="LockStateDescription.cs" t="Include" />
+              <e p="PanInvert.cs" t="Include" />
+              <e p="PanTiltSwap.cs" t="Include" />
+              <e p="RealTimeClock.cs" t="Include" />
+              <e p="TiltInvert.cs" t="Include" />
+            </e>
+            <e p="Control" t="Include">
+              <e p="CapturePreset.cs" t="Include" />
+              <e p="IdentifyDevice.cs" t="Include" />
+              <e p="IdentifyMode.cs" t="Include" />
+              <e p="PerformSelfTest.cs" t="Include" />
+              <e p="PowerOnSelfTest.cs" t="Include" />
+              <e p="PowerState.cs" t="Include" />
+              <e p="PresetInfo.cs" t="Include" />
+              <e p="PresetMergeMode.cs" t="Include" />
+              <e p="PresetPlayback.cs" t="Include" />
+              <e p="PresetStatus.cs" t="Include" />
+              <e p="ResetDevice.cs" t="Include" />
+              <e p="SelfTestDescription.cs" t="Include" />
+            </e>
+            <e p="Dimmer" t="Include">
+              <e p="Curve.cs" t="Include" />
+              <e p="CurveDescription.cs" t="Include" />
+              <e p="DimmerInfo.cs" t="Include" />
+              <e p="MaximumLevel.cs" t="Include" />
+              <e p="MinimumLevel.cs" t="Include" />
+              <e p="ModulationFrequency.cs" t="Include" />
+              <e p="ModulationFrequencyDescription.cs" t="Include" />
+              <e p="OutputResponseTimeDescription.cs" t="Include" />
+              <e p="OutputResponseTme.cs" t="Include" />
+            </e>
+            <e p="Discovery" t="Include">
+              <e p="DiscoveryMute.cs" t="Include" />
+              <e p="DiscoveryUniqueBranch.cs" t="Include" />
+              <e p="DiscoveryUnMute.cs" t="Include" />
+            </e>
+            <e p="Display" t="Include">
+              <e p="DisplayInvert.cs" t="Include" />
+              <e p="DisplayLevel.cs" t="Include" />
+            </e>
+            <e p="DMX" t="Include">
+              <e p="DefaultSlotValue.cs" t="Include" />
+              <e p="DmxBlockAddress.cs" t="Include" />
+              <e p="DmxFailMode.cs" t="Include" />
+              <e p="DmxPersonality.cs" t="Include" />
+              <e p="DmxPersonalityDescription.cs" t="Include" />
+              <e p="DmxStartAddress.cs" t="Include" />
+              <e p="DmxStartupMode.cs" t="Include" />
+              <e p="SlotDescription.cs" t="Include" />
+              <e p="SlotInfo.cs" t="Include" />
+            </e>
+            <e p="Management" t="Include">
+              <e p="CommsStatus.cs" t="Include" />
+              <e p="NackReason.cs" t="Include" />
+              <e p="ProxiedDeviceCount.cs" t="Include" />
+              <e p="ProxiedDevices.cs" t="Include" />
+              <e p="RdmAckTimer.cs" t="Include" />
+              <e p="RdmNack.cs" t="Include" />
+            </e>
+            <e p="Net" t="Include">
+              <e p="BackgroundDiscovery.cs" t="Include" />
+              <e p="BackgroundQueuedStatusPolicy.cs" t="Include" />
+              <e p="BackgroundQueuedStatusPolicyDescription.cs" t="Include" />
+              <e p="BackgroundStatusType.cs" t="Include" />
+              <e p="BindingControlFields.cs" t="Include" />
+              <e p="DiscoveryState.cs" t="Include" />
+              <e p="EndpointDeviceListChange.cs" t="Include" />
+              <e p="EndpointDevices.cs" t="Include" />
+              <e p="EndpointLabel.cs" t="Include" />
+              <e p="EndpointList.cs" t="Include" />
+              <e p="EndpointListChange.cs" t="Include" />
+              <e p="EndpointMode.cs" t="Include" />
+              <e p="EndpointTiming.cs" t="Include" />
+              <e p="EndpointTimingDescription.cs" t="Include" />
+              <e p="EndpointToUniverse.cs" t="Include" />
+              <e p="IdentifyEndpoint.cs" t="Include" />
+              <e p="QueuedStatusEndpointCollection.cs" t="Include" />
+              <e p="QueuedStatusUIDCollection.cs" t="Include" />
+              <e p="RdmTrafficEnable.cs" t="Include" />
+              <e p="TcpCommsStatus.cs" t="Include" />
+            </e>
+            <e p="Parameters" t="Include">
+              <e p="ParameterDescription.cs" t="Include" />
+              <e p="SupportedParameters.cs" t="Include" />
+            </e>
+            <e p="Power" t="Include">
+              <e p="BurnIn.cs" t="Include" />
+              <e p="DeviceHours.cs" t="Include" />
+              <e p="DevicePowerCycles.cs" t="Include" />
+              <e p="LampHours.cs" t="Include" />
+              <e p="LampOnMode.cs" t="Include" />
+              <e p="LampState.cs" t="Include" />
+              <e p="LampStrikes.cs" t="Include" />
+            </e>
+            <e p="Product" t="Include">
+              <e p="BootSoftwareVersionId.cs" t="Include" />
+              <e p="BootSoftwareVersionLabel.cs" t="Include" />
+              <e p="DeviceInfo.cs" t="Include" />
+              <e p="DeviceLabel.cs" t="Include" />
+              <e p="DeviceModelDescription.cs" t="Include" />
+              <e p="FactoryDefaults.cs" t="Include" />
+              <e p="Language.cs" t="Include" />
+              <e p="LanguageCapabilities.cs" t="Include" />
+              <e p="ManufacturerLabel.cs" t="Include" />
+              <e p="ProductCategories.cs" t="Include" />
+              <e p="ProductDetailIdList.cs" t="Include" />
+              <e p="SoftwareVersionLabel.cs" t="Include" />
+            </e>
+            <e p="RdmRawPacket.cs" t="Include" />
+            <e p="Sensors" t="Include">
+              <e p="RecordSensor.cs" t="Include" />
+              <e p="SensorDefinition.cs" t="Include" />
+              <e p="SensorValue.cs" t="Include" />
+            </e>
+            <e p="Status" t="Include">
+              <e p="ClearStatusId.cs" t="Include" />
+              <e p="QueuedMessage.cs" t="Include" />
+              <e p="StatusIdDescription.cs" t="Include" />
+              <e p="StatusMessages.cs" t="Include" />
+              <e p="StatusTypes.cs" t="Include" />
+              <e p="SubDeviceStatusReportThreshold.cs" t="Include" />
+            </e>
+          </e>
+          <e p="RdmCommands.cs" t="Include" />
+          <e p="RdmHeader.cs" t="Include" />
+          <e p="RdmNackCodes.cs" t="Include" />
+          <e p="RdmPacket.cs" t="Include" />
+          <e p="RdmPacketFactory.cs" t="Include" />
+          <e p="RdmParameters.cs" t="Include" />
+          <e p="RdmRequestPacket.cs" t="Include" />
+          <e p="RdmResponsePacket.cs" t="Include" />
+          <e p="RdmResponseTypes.cs" t="Include" />
+          <e p="Routing" t="Include">
+            <e p="DeviceFoundEventArgs.cs" t="Include" />
+            <e p="IRdmTransport.cs" t="Include" />
+            <e p="RdmRouteBinding.cs" t="Include" />
+            <e p="RdmRouter.cs" t="Include" />
+            <e p="RdmRoutingSocket.cs" t="Include" />
+          </e>
+          <e p="SubDeviceUId.cs" t="Include" />
+          <e p="UId.cs" t="Include" />
+          <e p="UnknownRdmPacketException.cs" t="Include" />
+        </e>
+        <e p="RdmNet" t="Include">
+          <e p="Sockets" t="Include">
+            <e p="HealthCheckedTcpSocket.cs" t="Include" />
+            <e p="RdmNetDeviceSocket.cs" t="Include" />
+            <e p="RdmNetMeshSocket.cs" t="Include" />
+            <e p="RdmNetSocket.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Slp" t="Include">
+          <e p="AttributeReplyEventArgs.cs" t="Include" />
+          <e p="AuthenticationBlock.cs" t="Include" />
+          <e p="DirectoryAgentInformation.cs" t="Include" />
+          <e p="IO" t="Include">
+            <e p="SlpBinaryReader.cs" t="Include" />
+            <e p="SlpBinaryWriter.cs" t="Include" />
+          </e>
+          <e p="Packets" t="Include">
+            <e p="AttributeReplyPacket.cs" t="Include" />
+            <e p="AttributeRequestPacket.cs" t="Include" />
+            <e p="DirectoryAgentAdvertPacket.cs" t="Include" />
+            <e p="ServiceAcknowledgePacket.cs" t="Include" />
+            <e p="ServiceAgentAdvertPacket.cs" t="Include" />
+            <e p="ServiceDeregistrationPacket.cs" t="Include" />
+            <e p="ServiceRegistrationPacket.cs" t="Include" />
+            <e p="ServiceReplyPacket.cs" t="Include" />
+            <e p="ServiceRequestPacket.cs" t="Include" />
+            <e p="ServiceTypeReplyPacket.cs" t="Include" />
+            <e p="ServiceTypeRequestPacket.cs" t="Include" />
+            <e p="SlpHeaderPacket.cs" t="Include" />
+            <e p="SlpPacket.cs" t="Include" />
+            <e p="SlpRequestPacket.cs" t="Include" />
+          </e>
+          <e p="ServiceFoundEventArgs.cs" t="Include" />
+          <e p="SlpAgent.cs" t="Include" />
+          <e p="SlpDiscoveryAgent.cs" t="Include" />
+          <e p="SlpErrorCode.cs" t="Include" />
+          <e p="SlpException.cs" t="Include" />
+          <e p="SlpFunctionId.cs" t="Include" />
+          <e p="SlpServiceAgent.cs" t="Include" />
+          <e p="SlpUserAgent.cs" t="Include" />
+          <e p="Sockets" t="Include">
+            <e p="NewPacketEventArgs.cs" t="Include" />
+            <e p="SlpSocket.cs" t="Include" />
+          </e>
+          <e p="UrlEntry.cs" t="Include" />
+        </e>
+        <e p="Sntp" t="Include">
+          <e p="NtpData.cs" t="Include" />
+          <e p="SntpClient.cs" t="Include" />
+          <e p="SntpServer.cs" t="Include" />
+          <e p="Sockets" t="Include">
+            <e p="NewPacketEventArgs.cs" t="Include" />
+            <e p="SntpSocket.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Sockets" t="Include">
+          <e p="AcnSocket.cs" t="Include" />
+          <e p="IRdmSocket.cs" t="Include" />
+          <e p="NewPacketEventArgs.cs" t="Include" />
+          <e p="RdmEndPoint.cs" t="Include" />
+          <e p="RdmReliableSocket.cs" t="Include" />
+          <e p="StreamingAcnSocket.cs" t="Include" />
+        </e>
+        <e p="TestTools" t="Include">
+          <e p="AcnListener.cs" t="Include" />
+          <e p="AssertDmx.cs" t="Include" />
+        </e>
+        <e p="TFtp" t="Include">
+          <e p="TFTPServer.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Acn.sln" t="IncludeFlat" />
+      <e p="Acn.Test" t="IncludeRecursive">
+        <e p="Acn.Test.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="NtpDataTest.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="SlpServiceAgentTest.cs" t="Include" />
+        <e p="SlpUserAgentTest.cs" t="Include" />
+        <e p="Test References" t="Include">
+          <e p="Acn.accessor" t="Include" />
+        </e>
+      </e>
+      <e p="Acn.vsmdi" t="Include" />
+      <e p="Citp" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Citp.csproj" t="IncludeRecursive" />
+        <e p="CitpMessageHandler.cs" t="Include" />
+        <e p="CitpStreamSession.cs" t="Include" />
+        <e p="DmxDescriptor.cs" t="Include" />
+        <e p="IO" t="Include">
+          <e p="CitpBinaryReader.cs" t="Include" />
+          <e p="CitpBinaryWriter.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Packets" t="Include">
+          <e p="CaEx" t="Include">
+            <e p="CaExClearRecorder.cs" t="Include" />
+            <e p="CaExContentCodes.cs" t="Include" />
+            <e p="CaExGetLiveViewImage.cs" t="Include" />
+            <e p="CaExGetLiveViewStatus.cs" t="Include" />
+            <e p="CaExHeader.cs" t="Include" />
+            <e p="CaExLiveViewImage.cs" t="Include" />
+            <e p="CaExLiveViewStatus.cs" t="Include" />
+            <e p="CaExNack.cs" t="Include" />
+            <e p="CaExRecordCue.cs" t="Include" />
+            <e p="CaExSetCueRecordingCapabilities.cs" t="Include" />
+            <e p="CaExSetRecorderClearingCapabilities.cs" t="Include" />
+          </e>
+          <e p="CitpHeader.cs" t="Include" />
+          <e p="CitpPacket.cs" t="Include" />
+          <e p="CitpPacketBuilder.cs" t="Include" />
+          <e p="FInf" t="Include">
+            <e p="FInfFrames.cs" t="Include" />
+            <e p="FInfHeader.cs" t="Include" />
+            <e p="FInfLiveStatus.cs" t="Include" />
+            <e p="FInfPosition.cs" t="Include" />
+            <e p="FInfSendFrames.cs" t="Include" />
+            <e p="FInfSendPosition.cs" t="Include" />
+          </e>
+          <e p="FPtc" t="Include">
+            <e p="FPtcHeader.cs" t="Include" />
+            <e p="FPtcPatch.cs" t="Include" />
+            <e p="FPtcSendPatch.cs" t="Include" />
+            <e p="FPtcUnpatch.cs" t="Include" />
+          </e>
+          <e p="FSel" t="Include">
+            <e p="FSelDeselect.cs" t="Include" />
+            <e p="FSelHeader.cs" t="Include" />
+            <e p="FSelSelect.cs" t="Include" />
+          </e>
+          <e p="Msex" t="Include">
+            <e p="CitpMsexClientInformation.cs" t="Include" />
+            <e p="CitpMsexEffectElementInformation.cs" t="Include" />
+            <e p="CitpMsexElementLibraryInformation.cs" t="Include" />
+            <e p="CitpMsexElementLibraryThumbnail.cs" t="Include" />
+            <e p="CitpMsexElementLibraryUpdated.cs" t="Include" />
+            <e p="CitpMsexElementThumbnail.cs" t="Include" />
+            <e p="CitpMsexElementTypes.cs" t="Include" />
+            <e p="CitpMsexGenericElementInformation.cs" t="Include" />
+            <e p="CitpMsexGetElementInformation.cs" t="Include" />
+            <e p="CitpMsexGetElementLibraryInformation.cs" t="Include" />
+            <e p="CitpMsexGetElementLibraryThumbnail.cs" t="Include" />
+            <e p="CitpMsexGetElementThumbnail.cs" t="Include" />
+            <e p="CitpMsexGetVideoSources.cs" t="Include" />
+            <e p="CitpMsexHeader.cs" t="Include" />
+            <e p="CitpMsexLayerStatus.cs" t="Include" />
+            <e p="CitpMsexLibraryId.cs" t="Include" />
+            <e p="CitpMsexMediaElementInformation.cs" t="Include" />
+            <e p="CitpMsexNack.cs" t="Include" />
+            <e p="CitpMsexRequestStream.cs" t="Include" />
+            <e p="CitpMsexServerInformation.cs" t="Include" />
+            <e p="CitpMsexStreamFrame.cs" t="Include" />
+            <e p="CitpMsexVideoSources.cs" t="Include" />
+          </e>
+          <e p="OMEx" t="Include">
+            <e p="DeviceInformation.cs" t="Include" />
+            <e p="OMExClearDMXDeviceStatus.cs" t="Include" />
+            <e p="OMExHeader.cs" t="Include" />
+            <e p="OMExSignalDMXDeviceStatus.cs" t="Include" />
+          </e>
+          <e p="PInf" t="Include">
+            <e p="CitpPInfHeader.cs" t="Include" />
+            <e p="CitpPInfPeerLocation.cs" t="Include" />
+            <e p="CitpPInfPeerName.cs" t="Include" />
+          </e>
+          <e p="SDmx" t="Include">
+            <e p="SDmxChannelBlock.cs" t="Include" />
+            <e p="SDmxEncryptionIdentifier.cs" t="Include" />
+            <e p="SDmxHeader.cs" t="Include" />
+            <e p="SDmxSetExternalSource.cs" t="Include" />
+            <e p="SDmxUniverseName.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Sockets" t="Include">
+          <e p="CitpClient.cs" t="Include" />
+          <e p="CitpMulticastSocket.cs" t="Include" />
+          <e p="CitpNewPacketEventArgs.cs" t="Include" />
+          <e p="CitpReceiveData.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Local.testsettings" t="Include" />
+      <e p="Midi" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="IO" t="Include">
+          <e p="MidiBinaryReader.cs" t="Include" />
+          <e p="MidiBinaryWriter.cs" t="Include" />
+        </e>
+        <e p="Messages" t="Include">
+          <e p="MidiSystemExclusiveMessage.cs" t="Include" />
+        </e>
+        <e p="Midi.csproj" t="IncludeRecursive" />
+        <e p="MidiCommand.cs" t="Include" />
+        <e p="MidiManufacturerId.cs" t="Include" />
+        <e p="MidiMessage.cs" t="Include" />
+        <e p="MidiMessageBuilder.cs" t="Include" />
+        <e p="MidiShowControl" t="Include">
+          <e p="MscCommand.cs" t="Include" />
+          <e p="MscFormat.cs" t="Include" />
+          <e p="MscMessage.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="UniversalRealTimeId.cs" t="Include" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="ProductVersion.cs" t="Include" />
+      <e p="Samples" t="Include">
+        <e p="ArtNet" t="IncludeRecursive">
+          <e p="app.config" t="Include" />
+          <e p="ArtNet.csproj" t="IncludeRecursive" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive" />
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+        <e p="GlitchDetector" t="IncludeRecursive">
+          <e p="app.config" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Detector.cs" t="Include" />
+          <e p="GlitchDetector.csproj" t="IncludeRecursive" />
+          <e p="obj" t="ExcludeRecursive" />
+          <e p="packages.config" t="Include" />
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+        <e p="RdmNetworkMonitor" t="IncludeRecursive">
+          <e p="AcnNetMonitor.cs" t="Include" />
+          <e p="AcnNetMonitor.Designer.cs" t="Include" />
+          <e p="AcnNetMonitor.resx" t="Include" />
+          <e p="AcnNetworkMonitor.csproj" t="IncludeRecursive" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive" />
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="AssemblyInfo.cs" t="Include" />
+            <e p="Resources.Designer.cs" t="Include" />
+            <e p="Resources.resx" t="Include" />
+            <e p="Settings.Designer.cs" t="Include" />
+            <e p="Settings.settings" t="Include" />
+          </e>
+          <e p="RdmDeviceBroker.cs" t="Include" />
+          <e p="RdmDeviceModel.cs" t="Include" />
+        </e>
+        <e p="RdmSnoop" t="IncludeRecursive">
+          <e p="app.config" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Brokers" t="Include">
+            <e p="ParameterInformation.cs" t="Include" />
+            <e p="PersonalitySlotInformation.cs" t="Include" />
+            <e p="RdmDeviceBroker.cs" t="Include" />
+          </e>
+          <e p="CardInfo.cs" t="Include" />
+          <e p="Images" t="Include">
+            <e p="ArtNet.gif" t="Include" />
+          </e>
+          <e p="ISnoopTransport.cs" t="Include" />
+          <e p="ListViewColumnSorter.cs" t="Include" />
+          <e p="Models" t="Include">
+            <e p="RdmDeviceModel.cs" t="Include" />
+          </e>
+          <e p="obj" t="ExcludeRecursive" />
+          <e p="packages.config" t="Include" />
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="AssemblyInfo.cs" t="Include" />
+            <e p="Resources.Designer.cs" t="Include" />
+            <e p="Resources.resx" t="Include" />
+            <e p="Settings.Designer.cs" t="Include" />
+            <e p="Settings.settings" t="Include" />
+          </e>
+          <e p="RdmSnoop.csproj" t="IncludeRecursive" />
+          <e p="RdmSnoopIcon.ico" t="Include" />
+          <e p="Resources" t="Include">
+            <e p="008_Reminder_32x42_72.png" t="Include" />
+            <e p="1195429270821624493molumen_multicolor_power_buttons_4.svg.med.png" t="Include" />
+            <e p="1446_envelope_stamp_clsd_48.png" t="Include" />
+            <e p="363508,1297017905,3.jpg" t="Include" />
+            <e p="base_cog_32.png" t="Include" />
+            <e p="Bolt_16xLG.png" t="Include" />
+            <e p="Connection_Manager.png" t="Include" />
+            <e p="Gear.png" t="Include" />
+            <e p="hyperlink.png" t="Include" />
+            <e p="OrgChartHS.png" t="Include" />
+            <e p="PauseHS.png" t="Include" />
+            <e p="RdmSnoopIcon.ico" t="Include" />
+            <e p="Red_Power_Button_clip_art_small.png" t="Include" />
+            <e p="RepeatHS.png" t="Include" />
+            <e p="SearchWebHS.png" t="Include" />
+            <e p="settings_16.png" t="Include" />
+          </e>
+          <e p="SnoopMain.cs" t="Include" />
+          <e p="SnoopMain.Designer.cs" t="Include" />
+          <e p="SnoopMain.resx" t="Include" />
+          <e p="Tools" t="Include">
+            <e p="DmxAddressDialog.cs" t="Include" />
+            <e p="DmxAddressDialog.Designer.cs" t="Include" />
+            <e p="DmxAddressDialog.resx" t="Include" />
+          </e>
+          <e p="Transports" t="Include">
+            <e p="ArtNet.cs" t="Include" />
+            <e p="RdmNet.cs" t="Include" />
+          </e>
+          <e p="UserMessage.cs" t="Include" />
+          <e p="UserMessage.Designer.cs" t="Include" />
+          <e p="UserMessage.resx" t="Include" />
+        </e>
+        <e p="SandboxAcnDevice" t="IncludeRecursive">
+          <e p="AcnDevice.cs" t="Include" />
+          <e p="AcnDevice.Designer.cs" t="Include" />
+          <e p="AcnDevice.resx" t="Include" />
+          <e p="app.config" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive" />
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="AssemblyInfo.cs" t="Include" />
+            <e p="Resources.Designer.cs" t="Include" />
+            <e p="Resources.resx" t="Include" />
+            <e p="Settings.Designer.cs" t="Include" />
+            <e p="Settings.settings" t="Include" />
+          </e>
+          <e p="RdmDevice.cs" t="Include" />
+          <e p="SandboxAcnDevice.csproj" t="IncludeRecursive" />
+        </e>
+        <e p="SlpDiscovery" t="IncludeRecursive">
+          <e p="app.config" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive" />
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="AssemblyInfo.cs" t="Include" />
+            <e p="Resources.Designer.cs" t="Include" />
+            <e p="Resources.resx" t="Include" />
+            <e p="Settings.Designer.cs" t="Include" />
+            <e p="Settings.settings" t="Include" />
+          </e>
+          <e p="SlpDiscovery.cs" t="Include" />
+          <e p="SlpDiscovery.csproj" t="IncludeRecursive" />
+          <e p="SlpDiscovery.Designer.cs" t="Include" />
+          <e p="SlpDiscovery.resx" t="Include" />
+        </e>
+        <e p="StreamingAcn" t="IncludeRecursive">
+          <e p="app.config" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="CardInfo.cs" t="Include" />
+          <e p="ChannelCell.cs" t="Include" />
+          <e p="ChannelCell.resx" t="Include" />
+          <e p="DmxUniverseData.cs" t="Include" />
+          <e p="obj" t="ExcludeRecursive" />
+          <e p="packages.config" t="Include" />
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="AssemblyInfo.cs" t="Include" />
+            <e p="Resources.Designer.cs" t="Include" />
+            <e p="Resources.resx" t="Include" />
+            <e p="Settings.Designer.cs" t="Include" />
+            <e p="Settings.settings" t="Include" />
+          </e>
+          <e p="RdmNet" t="Include">
+            <e p="RdmNetEndPoint.cs" t="Include" />
+            <e p="RdmNetEndPointExplorer.cs" t="Include" />
+          </e>
+          <e p="StreamingAcn.csproj" t="IncludeRecursive" />
+          <e p="StreamingAcnSnoop.cs" t="Include" />
+          <e p="StreamingAcnSnoop.Designer.cs" t="Include" />
+          <e p="StreamingAcnSnoop.resx" t="Include" />
+        </e>
+      </e>
+      <e p="SntpUpdate" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Options.cs" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="SntpUpdate.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="Solution Items" t="Include" />
+      <e p="TraceAndTestImpact.testsettings" t="Include" />
+      <e p="Version" t="Include" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_Acn.-878897774.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
+  </component>
+</project>

@@ -361,14 +361,14 @@ namespace Acn.Sntp
                         switch (VersionNumber)
                         {
                             case 3:	// Version 3, Reference ID is an IPv4 address
-                                string Address = NTPData[offReferenceID + 0].ToString() + "." +
+                                string address = NTPData[offReferenceID + 0].ToString() + "." +
                                                  NTPData[offReferenceID + 1].ToString() + "." +
                                                  NTPData[offReferenceID + 2].ToString() + "." +
                                                  NTPData[offReferenceID + 3].ToString();
                                 try
                                 {
-                                    IPHostEntry Host = Dns.GetHostByAddress(Address);
-                                    val = Host.HostName + " (" + Address + ")";
+                                    IPHostEntry host = Dns.GetHostEntry(address);
+                                    val = host.HostName + " (" + address + ")";
                                 }
                                 catch (Exception)
                                 {

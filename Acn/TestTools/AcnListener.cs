@@ -1,7 +1,7 @@
 ﻿using Acn.Sockets;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -81,7 +81,7 @@ namespace Acn.TestTools
         {
             lock (SyncRoot)
             {
-                Assert.IsTrue(Contains(source), "Expected ACN source {0} missing", source);
+                Debug.Assert(Contains(source), $"Expected ACN source {source} missing");
                 return dmxValues[new Tuple<Guid, int>(source, universe)][channel];
             }
         }

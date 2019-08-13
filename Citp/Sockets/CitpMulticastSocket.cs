@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Net.Sockets;
 using System.Net;
 using Citp.Packets;
 using System.IO;
-using Citp.Sockets;
 using Citp.IO;
 
 namespace Citp.Sockets

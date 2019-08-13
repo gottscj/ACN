@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,7 +9,6 @@ using System.Threading;
 using Acn.Sockets;
 using Acn.Packets.sAcn;
 using System.Globalization;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Acn.TestTools
 {
@@ -88,7 +88,8 @@ namespace Acn.TestTools
         {
             ProcessInput(Guid.Empty,universe, 2500, (packet) =>
             {
-                Assert.AreEqual(level, packet.Dmx.Data[address], string.Format("DMX levels do not match for universe {0} address {1}.", universe,address));
+                Debug.Assert(level.Equals(packet.Dmx.Data[address]),
+                    $"DMX levels do not match for universe {universe} address {address}.");
             });
         }
 
@@ -96,7 +97,7 @@ namespace Acn.TestTools
         public static void UniverseEqual(int universe, params byte[] levels)
         {
             ProcessInput(Guid.Empty, universe, 2500 ,(packet) => {
-                Assert.IsTrue(packet.Dmx.Data.SequenceEqual(levels),string.Format("DMX values do not match for universe {0}.",universe));
+                Debug.Assert(packet.Dmx.Data.SequenceEqual(levels), $"DMX values do not match for universe {universe}.");
             });
         }
 

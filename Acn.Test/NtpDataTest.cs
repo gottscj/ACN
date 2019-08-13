@@ -1,5 +1,5 @@
 ﻿using Acn.Sntp;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using System;
 
 namespace Acn.Test
@@ -10,7 +10,7 @@ namespace Acn.Test
     ///This is a test class for NtpDataTest and is intended
     ///to contain all NtpDataTest Unit Tests
     ///</summary>
-    [TestClass()]
+    [TestFixture]
     public class NtpDataTest
     {
 
@@ -67,7 +67,7 @@ namespace Acn.Test
         /// <summary>
         ///A test for VersionNumber
         ///</summary>
-        [TestMethod()]
+        [Test, Category("Unit")]
         public void VersionNumberTest()
         {
             NtpData validate = new NtpData(new byte[] { 0x23 });
@@ -80,7 +80,7 @@ namespace Acn.Test
             Assert.AreEqual(expected, target.VersionNumber);
 
             target.Mode = NtpMode.Client;
-            Assert.AreEqual<NtpMode>(NtpMode.Client, target.Mode);
+            Assert.AreEqual(NtpMode.Client, target.Mode);
             Assert.AreEqual(expected, target.VersionNumber, "Version number changed by setting mode");
 
             Assert.AreEqual(0x23, target.ToArray()[0]);
@@ -89,28 +89,28 @@ namespace Acn.Test
         /// <summary>
         ///A test for RootDispersion
         ///</summary>
-        [TestMethod()]
+        [Test, Category("Unit")]
         public void RootDispersionTest()
         {
             NtpData target = new NtpData();
             double actual = 250;
             target.RootDispersion = actual;
-            Assert.AreEqual<double>(actual, target.RootDispersion);
+            Assert.AreEqual(actual, target.RootDispersion);
             actual = -250;
             target.RootDispersion = actual;
-            Assert.AreEqual<double>(actual, target.RootDispersion);
+            Assert.AreEqual(actual, target.RootDispersion);
             actual = -31.25d;
             target.RootDispersion = actual;
-            Assert.AreEqual<double>(actual, target.RootDispersion);
+            Assert.AreEqual(actual, target.RootDispersion);
             actual = 3.90625;
             target.RootDispersion = actual;
-            Assert.AreEqual<double>(actual, target.RootDispersion);
+            Assert.AreEqual(actual, target.RootDispersion);
             actual = 8000;
             target.RootDispersion = actual;
-            Assert.AreEqual<double>(actual, target.RootDispersion);
+            Assert.AreEqual(actual, target.RootDispersion);
             actual = -8250;
             target.RootDispersion = actual;
-            Assert.AreEqual<double>(actual, target.RootDispersion);
+            Assert.AreEqual(actual, target.RootDispersion);
         }
     }
 }

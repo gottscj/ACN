@@ -35,6 +35,7 @@ using System.Windows.Forms;
 using Acn.Slp;
 using Acn.Rdm;
 using System.Net;
+using Acn.RdmNet.Sockets;
 using Acn.Sockets;
 using Acn.Slp.Packets;
 
@@ -43,7 +44,7 @@ namespace RdmNetworkMonitor
     public partial class AcnNetMonitor : Form
     {
         private SlpUserAgent slpUser = new SlpUserAgent("ACN-DEFAULT");
-        private RdmSocket acnSocket = new RdmSocket(UId.NewUId(0xFF),Guid.NewGuid(), "Acn Net Monitor");
+        private RdmNetSocket acnSocket = new RdmNetSocket(UId.NewUId(0xFF),Guid.NewGuid(), "Acn Net Monitor");
         private IPAddress localAddress = new IPAddress(new byte[] { 10, 0, 0, 1 });
 
         public AcnNetMonitor()

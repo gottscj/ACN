@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f99e5f55-1f5f-43f4-a7aa-9b84aa84e8d1" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Samples/StreamingAcn/RdmNet/RdmNetEndPointExplorer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SntpServer/App.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SntpServer/MainWindow.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SntpServer/MainWindow.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SntpServer/Properties/AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Citp/Packets/CitpPacketBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Acn/Sntp/NtpData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Samples/SandboxAcnDevice/RdmDevice.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Samples/RdmNetworkMonitor/RdmDeviceModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Samples/RdmNetworkMonitor/RdmDeviceBroker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Acn/TestTools/AssertDmx.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Acn/TestTools/AcnListener.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Citp/Packets/FInf/FInfHeader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Samples/RdmNetworkMonitor/AcnNetMonitor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Acn/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Citp/Packets/FInf/FInfFrames.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Acn/RdmNet/Sockets/RdmNetSocket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Acn/RdmNet/Sockets/RdmNetMeshSocket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Acn/Rdm/RdmPacket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Acn/RdmNet/Sockets/RdmNetDeviceSocket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Acn.Test/NtpDataTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Acn.Test/SlpUserAgentTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Acn.Test/SlpServiceAgentTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Acn.Test/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Samples/ArtNet/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Acn/Rdm/Broker/RdmDiscovery.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Acn/Slp/SlpUserAgent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Acn/Slp/SlpServiceAgent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProductVersion.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Acn/TestTools/AcnListener.cs" />
+        <option value="$PROJECT_DIR$/Acn/TestTools/AssertDmx.cs" />
+        <option value="$PROJECT_DIR$/Acn.Test/NtpDataTest.cs" />
+        <option value="$PROJECT_DIR$/SntpServer/App.xaml.cs" />
+        <option value="$PROJECT_DIR$/Acn/Slp/SlpServiceAgent.cs" />
+        <option value="$PROJECT_DIR$/Acn.Test/SlpServiceAgentTest.cs" />
+        <option value="$PROJECT_DIR$/Acn/Slp/SlpUserAgent.cs" />
+        <option value="$PROJECT_DIR$/Acn.Test/SlpUserAgentTest.cs" />
+        <option value="$PROJECT_DIR$/Acn/Properties/AssemblyInfo.cs" />
+        <option value="$PROJECT_DIR$/Samples/SandboxAcnDevice/SandboxAcnDevice.csproj" />
+        <option value="$PROJECT_DIR$/Acn/Acn.csproj" />
+        <option value="$PROJECT_DIR$/Samples/SlpDiscovery/SlpDiscovery.csproj" />
+        <option value="$PROJECT_DIR$/Samples/StreamingAcn/StreamingAcn.csproj" />
+        <option value="$PROJECT_DIR$/Acn/Sntp/NtpData.cs" />
+        <option value="$PROJECT_DIR$/Citp/Packets/CitpPacketBuilder.cs" />
+        <option value="$PROJECT_DIR$/Citp/Packets/FInf/FInfFrames.cs" />
+        <option value="$PROJECT_DIR$/SntpServer/SntpServer.csproj" />
+        <option value="$PROJECT_DIR$/Samples/RdmNetworkMonitor/AcnNetMonitor.cs" />
+        <option value="$PROJECT_DIR$/Samples/RdmNetworkMonitor/RdmDeviceModel.cs" />
+        <option value="$PROJECT_DIR$/Samples/RdmNetworkMonitor/RdmDeviceBroker.cs" />
+        <option value="$PROJECT_DIR$/Samples/RdmNetworkMonitor/AcnNetworkMonitor.csproj" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1PMrvfbBLLIOC07RNPhpuWgSPdV" />
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Samples\SlpDiscovery">
+    <configuration name="AcnNetworkMonitor" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Samples/RdmNetworkMonitor/bin/Debug/RdmNetworkMonitor.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Samples/RdmNetworkMonitor/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Samples/RdmNetworkMonitor/AcnNetworkMonitor.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.0" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Samples\ArtNet" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Samples/ArtNet/bin/Debug/ArtNet.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Samples/ArtNet/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Samples/ArtNet/ArtNet.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Samples\SandboxAcnDevice" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Samples/SandboxAcnDevice/bin/Debug/SandboxAcnDevice.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Samples/SandboxAcnDevice/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Samples/SandboxAcnDevice/SandboxAcnDevice.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Samples\SlpDiscovery" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Samples/SlpDiscovery/bin/Debug/SlpDiscovery.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Samples/SlpDiscovery/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Samples/SlpDiscovery/SlpDiscovery.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue=".NET Project.Samples\SlpDiscovery" />
+        <item itemvalue=".NET Project.Samples\SandboxAcnDevice" />
+        <item itemvalue=".NET Project.Samples\ArtNet" />
+        <item itemvalue=".NET Project.AcnNetworkMonitor" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f99e5f55-1f5f-43f4-a7aa-9b84aa84e8d1" name="Default Changelist" comment="" />
+      <created>1565695039105</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565695039105</updated>
+      <workItem from="1565695040711" duration="3058000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="2518" height="476" key="GridCell.Tab.0.bottom" />
+    <state width="2518" height="476" key="GridCell.Tab.0.bottom/2560.1440/2560.1440" />
+    <state width="2518" height="476" key="GridCell.Tab.0.center" />
+    <state width="2518" height="476" key="GridCell.Tab.0.center/2560.1440/2560.1440" />
+    <state width="2518" height="476" key="GridCell.Tab.0.left" />
+    <state width="2518" height="476" key="GridCell.Tab.0.left/2560.1440/2560.1440" />
+    <state width="2518" height="476" key="GridCell.Tab.0.right" />
+    <state width="2518" height="476" key="GridCell.Tab.0.right/2560.1440/2560.1440" />
+    <state x="3440" y="470" key="Rider.ProjectTemplateDialog.Size" />
+    <state x="3440" y="470" key="Rider.ProjectTemplateDialog.Size/2560.1440/2560.1440" />
+    <state x="3154" y="170" width="1764" height="939" key="find.popup" />
+    <state x="3154" y="170" width="1764" height="939" key="find.popup/2560.1440/2560.1440" />
+    <state x="3503" y="346" width="672" height="678" key="search.everywhere.popup" />
+    <state x="3503" y="346" width="672" height="678" key="search.everywhere.popup/2560.1440/2560.1440" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -6,13 +6,14 @@ using System.Windows.Forms;
 using Acn.Sockets;
 using Acn.Rdm;
 using System.Net;
+using Acn.RdmNet.Sockets;
 
 namespace RdmNetworkMonitor
 {
     public class RdmDeviceModel:RdmDeviceBroker
     {
 
-        public RdmDeviceModel(TreeNode node, RdmSocket socket, UId id,RdmAddress ipAddress)
+        public RdmDeviceModel(TreeNode node, RdmNetSocket socket, UId id,IPAddress ipAddress)
             : base(socket, id,ipAddress)
         {
             Node = node;

@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.IO;
+﻿using System.IO;
 using Citp.Packets.Msex;
 using Citp.Packets.CaEx;
-using Citp.Packets.Msex;
 using Citp.Sockets;
 using Citp.Packets.PInf;
 using Citp.Packets.SDmx;

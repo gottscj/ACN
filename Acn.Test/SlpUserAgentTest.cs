@@ -1,8 +1,5 @@
 ﻿using Acn.Slp;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using Acn.Slp.Packets;
-using System.Net;
+using NUnit.Framework;
 using System.Collections.Generic;
 
 namespace Acn.Test
@@ -13,7 +10,7 @@ namespace Acn.Test
     ///This is a test class for SlpUserAgentTest and is intended
     ///to contain all SlpUserAgentTest Unit Tests
     ///</summary>
-    [TestClass()]
+    [TestFixture]
     public class SlpUserAgentTest
     {
 
@@ -70,8 +67,7 @@ namespace Acn.Test
         /// <summary>
         ///A test for SplitAttributeList
         ///</summary>
-        [TestMethod()]
-        [DeploymentItem("Acn.dll")]
+        [Test, Category("Unit")]
         public void SplitAttributeListTest()
         {
             string attributeList = "(Foo=Bar),(Time=Money),(Knowledge=Power),(Tea=Happiness)";
@@ -82,7 +78,7 @@ namespace Acn.Test
             expected["Tea"] = "Happiness";
 
             Dictionary<string, string> actual;
-            actual = SlpUserAgent_Accessor.SplitAttributeList(attributeList);
+            actual = SlpUserAgent.SplitAttributeList(attributeList);
             CollectionAssert.AreEquivalent(expected, actual, "Dictionarys didn't match"); 
            
         }

@@ -8,16 +8,17 @@ using Acn.Sockets;
 using Acn.Rdm;
 using Acn.Rdm.Packets;
 using Acn.Rdm.Packets.Net;
+using Acn.RdmNet.Sockets;
 
 namespace RdmNetworkMonitor
 {
     public class RdmDeviceBroker
     {
-        RdmSocket socket = null;
+        RdmNetSocket socket = null;
 
         public event EventHandler PortsChanged;
 
-        public RdmDeviceBroker(RdmSocket socket, UId id,RdmAddress address)
+        public RdmDeviceBroker(RdmNetSocket socket, UId id,IPAddress address)
         {
             Id = id;
             Address = address;
@@ -28,10 +29,10 @@ namespace RdmNetworkMonitor
 
         void socket_NewRdmPacket(object sender, NewPacketEventArgs<RdmPacket> e)
         {
-            PortList.Reply ports = e.Packet as PortList.Reply;
+            EndpointList.Reply ports = e.Packet as EndpointList.Reply;
             if (ports != null)
             {
-                Ports = ports.PortNumbers;
+                Ports = ports.EndpointIDs;
                 if (PortsChanged != null)
                     PortsChanged(this, EventArgs.Empty);
             }
@@ -39,14 +40,14 @@ namespace RdmNetworkMonitor
 
         public UId Id { get; set; }
 
-        public RdmAddress Address { get; set; }
+        public IPAddress Address { get; set; }
 
         public List<short> Ports { get; set; }
 
         public void Identify()
         {
-            PortList.Get getPorts = new PortList.Get();
-            socket.SendRdm(getPorts,Address,Id);
+            EndpointList.Get getPorts = new EndpointList.Get();
+            socket.SendRdm(getPorts, new RdmEndPoint(Address),  Id);
         }
     }
 }
